@@ -7,7 +7,7 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 section{
-    background-color: #EDE8D5/*#FFC9D8*/;
+    background-color: #EDE8D5;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -45,9 +45,10 @@ section{
 .all-buttons{
     color: #FFFF;
     display: grid;
+    font-weight: bold;
     grid-template: repeat(4,1fr)/repeat(4,1fr);
 }
-.clear,.clear-entity,.number,.operators,.btn-0,.dot,.btn-equal{
+.clear,.clear-entity,.number,.operators,.btn-0,.btn-equal{
     border: 0.5px solid #FFC9D8;
     display:flex;
     font-size: 30px;
@@ -57,6 +58,9 @@ section{
     justify-content: center;
     cursor: pointer;
 }
-.clear,.clear-entity,.number,.operators,.btn-0,.dot,.btn-equal::hover{
-    background-color: #FFC9D8;
+.clear:hover,.clear-entity:hover,.number:hover,.operators:hover,.btn-0:hover,.btn-equal:hover{
+    background-color: #f6dff4;
+}
+.btn-0{
+    grid-column: 1/3;
 }
